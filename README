@@ -1,0 +1,19 @@
+debian_version-squeeze.py
+-------------------------
+Takes the [saved] output of dpkg --get-selections
+and reports 'squeeze' or 'lenny'
+as best guess of the installed system.
+
+
+for s in $(ls *.get-selections);do cat $s | python /tmp/debian_version-squeeze.py;done
+lenny (guesswork!!!)... based on score_new_old=-1
+squeeze... based on score_new_old=3
+squeeze... based on score_new_old=5
+squeeze... based on score_new_old=5
+squeeze... based on score_new_old=5
+lenny (guesswork!!!)... based on score_new_old=-1
+lenny (guesswork!!!)... based on score_new_old=-1
+lenny (guesswork!!!)... based on score_new_old=-1
+lenny (guesswork!!!)... based on score_new_old=-1
+lenny (guesswork!!!)... based on score_new_old=-1
+lenny (guesswork!!!)... based on score_new_old=-1
